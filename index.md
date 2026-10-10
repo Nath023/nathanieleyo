@@ -1,7 +1,20 @@
+---
+layout: default
+---
+
 # Nathaniel Eyo
 
-Welcome to my personal blog.
+Web developer, digital builder, and curious mind.
 
-I write about technology, business, ideas, and things I'm building.
+I write about technology, business, ideas, and lessons from the things I build.
 
-This is a space for my essays, notes, and reflections.
+## Essays
+
+{% for post in site.posts %}
+### [{{ post.title }}]({{ post.url | relative_url }})
+
+<small>{{ post.date | date: "%B %-d, %Y" }}</small>
+
+{{ post.excerpt | strip_html | truncatewords: 35 }}
+
+{% endfor %}
