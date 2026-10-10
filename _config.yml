@@ -1,0 +1,9 @@
+title: "Nathaniel Eyo"
+description: "Personal essays, ideas, and notes."
+theme: jekyll-theme-minimal
+
+author:
+  name: "Nathaniel Eyo"
+  bio: "Writer, developer, and builder."
+
+show_downloads: false
