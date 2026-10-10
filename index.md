@@ -1,20 +1,27 @@
 ---
-layout: default
----
+
+## layout: default
 
 # Nathaniel Eyo
 
-Web developer, digital builder, and curious mind.
+I’m a web developer and digital builder interested in technology, business, and the process of turning ideas into useful things.
 
-I write about technology, business, ideas, and lessons from the things I build.
+This is my personal space for essays, notes, experiments, and lessons learned along the way.
 
-## Essays
+---
+
+## Writing
 
 {% for post in site.posts %}
+
 ### [{{ post.title }}]({{ post.url | relative_url }})
 
-<small>{{ post.date | date: "%B %-d, %Y" }}</small>
+*{{ post.date | date: "%B %-d, %Y" }}*
 
-{{ post.excerpt | strip_html | truncatewords: 35 }}
+{{ post.excerpt | strip_html | truncatewords: 40 }}
 
 {% endfor %}
+
+---
+
+[About](about.md) · [GitHub](https://github.com/Nath023)
